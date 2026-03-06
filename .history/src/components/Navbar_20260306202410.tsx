@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Download } from 'lucide-react';
 import { Language } from '../../types';
-import { CV_URL, LINKED_URL } from '../../constants';
+import { CV_URL, LINKEDIN_URL } from '../../constants';
 
 interface NavbarProps {
   language: Language;
@@ -65,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
                 {language === 'en' ? 'FR' : 'EN'}
               </button>
               
-              <a href={LINKED_URL} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-brand-accent transition-colors">
+              <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-brand-accent transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
 

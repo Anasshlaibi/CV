@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Linkedin, Mail, ChevronDown, FileText, X } from 'lucide-react';
 import { Language, Category, LocalizedString } from '../../types';
-import { HERO_TITLE, INTRO, CV_URL, LINKED_URL, MODE_LABELS, CATEGORY_ICONS, STATUS_DATA } from '../../constants';
+import { HERO_TITLE, INTRO, CV_URL, LINKEDIN_URL, MODE_LABELS, CATEGORY_ICONS, STATUS_DATA } from '../../constants';
 
 interface HeroProps {
   language: Language;
@@ -17,13 +17,13 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ language, setLanguage, selectedCategory, setSelectedCategory, title, intro, coverLetter }) => {
   const [showCoverLetter, setShowCoverLetter] = React.useState(false);
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-transparent pt-16" id="home">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-dark pt-16" id="home">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-blue-500/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-indigo-500/10 rounded-full blur-[120px]" />
+        <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-brand-accent/20 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-brand-purple/20 rounded-full blur-[120px] animate-pulse delay-700" />
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
       </div>
-
 
       <div className="container mx-auto px-4 z-10 relative">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
@@ -113,7 +113,7 @@ const Hero: React.FC<HeroProps> = ({ language, setLanguage, selectedCategory, se
             )}
             
             <a 
-              href={LINKED_URL}
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-slate-800/50 hover:bg-slate-800 text-white rounded-xl font-semibold backdrop-blur-sm border border-slate-700 transition-all hover:-translate-y-0.5"

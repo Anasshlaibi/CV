@@ -35,13 +35,13 @@ function App() {
 
 
   return (
-    <div className="bg-[#020617] min-h-screen text-slate-200 font-sans selection:bg-blue-500/30 selection:text-white relative overflow-x-hidden">
+    <div className="bg-brand-dark min-h-screen text-slate-200 font-sans selection:bg-brand-accent selection:text-white relative overflow-x-hidden">
       
       {/* Global Mouse Follower Spotlight */}
       <div 
         className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
         style={{
-          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.08), transparent 80%)`
+          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
         }}
       />
 
@@ -54,30 +54,37 @@ function App() {
         setSelectedCategory={setSelectedCategory}
       />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <KeyProjects language={language} />
+      <LogoCloud />
 
-        <ExperienceTimeline 
-          language={language} 
-          category={selectedCategory} 
-        />
-        
-        <Education language={language} />
+      {/* Decorative Divider */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-800 to-transparent" />
 
-        <SkillsStats language={language} category={selectedCategory} />
-        
-        <Testimonials language={language} />
-        
-        <div id="contact" className="py-20">
-          <h2 className="text-3xl font-bold text-center mb-12">Contact Me</h2>
-          <ContactForm />
-        </div>
+      <VibeCoding language={language} />
+
+      <ArchitectureVisual language={language} />
+
+      <KeyProjects language={language} />
+
+      <ExperienceTimeline 
+        language={language} 
+        category={selectedCategory} 
+      />
+      
+      <Education language={language} />
+
+      <SkillsStats language={language} category={selectedCategory} />
+      
+      <Testimonials language={language} />
+      
+      <div id="contact" className="py-20 px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">Contact Me</h2>
+        <ContactForm />
       </div>
 
       <Footer language={language} />
+      <ChatAgent />
     </div>
   );
-
 }
 
 export default App;

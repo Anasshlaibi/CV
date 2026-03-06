@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Language } from '../../types';
-import { LINKED_URL } from '../../constants';
+import { LINKEDIN_URL } from '../../constants';
 
 interface FooterProps {
   language: Language;
@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
 
         <div className="flex items-center gap-6">
           <a 
-            href={LINKED_URL} 
+            href={LINKEDIN_URL} 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-brand-accent transition-colors"
