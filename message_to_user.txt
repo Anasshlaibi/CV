@@ -1,0 +1,11 @@
+I'm unable to connect to the Vite development server even locally, despite it reporting "ready" on port 3005. I've ruled out port conflicts and issues in the application's code (`App.tsx`, `index.tsx`, `constants.ts`, `types.ts`, `vite.config.ts`).
+
+The most probable causes for this are:
+1.  **Firewall:** Your operating system's firewall (e.g., Windows Defender Firewall) or a third-party firewall is blocking the Vite process from listening for connections.
+2.  **Antivirus/Security Software:** Your antivirus or other security software might be interfering with local network connections.
+
+You will need to manually check your firewall and antivirus settings to ensure they are not blocking `node.js` or `vite` from operating correctly. You may need to add an exception for the Node.js executable or for port 3005.
+
+Regarding your question "can we run it in other website or somting": I operate within your local environment and cannot directly deploy or run the website on an external server. My capabilities are limited to assisting with the local development setup.
+
+Please check your firewall and antivirus settings. If you resolve those issues and are still experiencing problems, let me know.
