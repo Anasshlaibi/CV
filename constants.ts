@@ -9,8 +9,8 @@ import {
 import { BarChart3, Box, PenTool, Database, Globe, Zap } from "lucide-react";
 
 export const INTRO: LocalizedString = {
-  en: "I eliminate industrial bottlenecks by deploying 'Systems-as-a-Server'—autonomous sales engines and secure AI-database architectures. My background in Physics provides the unique structural logic to solve complex system failures, while my Data Marketing expertise ensures every loop generates measurable ROI.",
-  fr: "J'élimine les goulots d'étranglement industriels en déployant des 'Systèmes-en-tant-que-Serveur'—des moteurs de vente autonomes et des architectures IA-données sécurisées. Mon parcours en Physique apporte la logique structurelle pour résoudre les défaillances de systèmes complexes, tandis que mon expertise en Marketing Data assure un ROI mesurable.",
+  en: "I eliminate operational bottlenecks by deploying autonomous sales engines and secure AI-database architectures. My background in Physics provides the structural logic to solve failures, while my Data Marketing degree ensures every system I build generates measurable ROI.",
+  fr: "J'élimine les goulots d'étranglement opérationnels en déployant des moteurs de vente autonomes et des architectures base de données-IA sécurisées. Mon parcours en Physique apporte la logique structurelle, tandis que mon diplôme en Marketing Data assure un ROI mesurable.",
 };
 
 export const HERO_TITLE: LocalizedString = {
@@ -19,15 +19,15 @@ export const HERO_TITLE: LocalizedString = {
 };
 
 export const CTA_TEXT: LocalizedString = {
-  en: "Download Portfolio",
-  fr: "Télécharger Portfolio",
+  en: "Download CV",
+  fr: "Télécharger CV",
 };
 
 export const MODE_LABELS: Record<string, LocalizedString> = {
-  all: { en: "Full Architecture", fr: "Architecture Complète" },
+  all: { en: "Full Systems View", fr: "Vue Systèmes Complète" },
   growth: { en: "AI Ops & ROI", fr: "Opérations IA & ROI" },
-  operations: { en: "Systems-as-a-Server", fr: "Systèmes-en-tant-que-Serveur" },
-  creative: { en: "Industrial Standards", fr: "Normes Industrielles" },
+  operations: { en: "Architecture & Data", fr: "Architecture & Data" },
+  creative: { en: "Industrial Media", fr: "Média Industriel" },
 };
 
 export const VIBE_CODING_DATA = {
@@ -40,160 +40,153 @@ export const VIBE_CODING_DATA = {
     en: "Building technical resilience through AI-native workflows (Vertex AI, Gemini 2.0 Flash). I architect autonomous systems that bridge the gap between complex data and business execution.",
     fr: "Construction de la résilience technique via des flux de travail natifs IA (Vertex AI, Gemini 2.0 Flash). J'architecture des systèmes autonomes reliant les données complexes à l'exécution commerciale.",
   },
-  tag: { en: "Technical Philosophy", fr: "Philosophie Technique" },
+  tag: { en: "Core Philosophy", fr: "Philosophie Centrale" },
 };
 
 export const PROJECTS_DATA: Project[] = [
   {
     id: "chada-alyasmin",
     title: {
-      en: "Enterprise B2B Sales Ecosystem (Chada Alyasmin)",
-      fr: "Écosystème de Vente B2B Entreprise (Chada Alyasmin)",
+      en: "Chada Alyasmin Sales Engine",
+      fr: "Moteur de Vente Chada Alyasmin",
     },
-    role: {
-      en: "Senior Solutions Architect",
-      fr: "Architecte Solutions Senior",
-    },
-    metric: {
-      en: "Zero-Friction Pipeline",
-      fr: "Pipeline Sans Friction",
-    },
+    role: { en: "Lead Architect", fr: "Architecte Principal" },
+    metric: { en: "Autonomous Sales Flow", fr: "Flux de Vente Autonome" },
     categories: ["growth", "operations"],
     description: {
-      en: "Architected a high-end B2B ecosystem for Ste Chada. Powered by a Google Vertex AI Brain (Gemini 2.0 Flash) acting as a Senior technical sales consultant with multilingual intelligent cross-selling. Features an autonomous real-time link between Supabase (PG) and AI knowledge bases with zero-friction automated PDF quote generation and intelligent sales-office routing. Secured with Enterprise-Grade Service Accounts.",
-      fr: "Conception d'un écosystème B2B d'entreprise pour Ste Chada. Piloté par une IA Vertex (Gemini 2.0 Flash) agissant comme consultant technique senior avec cross-selling intelligent. Lien autonome Supabase/IA et génération de devis PDF automatisée sans friction. Sécurisé par des Comptes de Service d'entreprise.",
+      en: "Enterprise-grade B2B ecosystem featuring a multilingual AI Consultant (French, English, Darija) powered by Gemini 2.0 Flash and Supabase. Automated the entire funnel from technical Q&A to PDF quote generation, ensuring 100% data sync and secure API orchestration.",
+      fr: "Écosystème B2B de classe entreprise incluant un Consultant IA multilingue (Français, Anglais, Darija) propulsé par Gemini 2.0 Flash et Supabase. Automatisation du tunnel complet, de la Q&A technique à la génération de devis PDF.",
     },
     tags: ["Vertex AI", "Supabase", "React", "Enterprise Security"],
     link: "https://chadaalyasminma.vercel.app/fr",
   },
   {
+    id: "siemens-industrial",
+    title: {
+      en: "Industrial Standard Media",
+      fr: "Média aux Normes Industrielles",
+    },
+    role: {
+      en: "Technical Standards Partner",
+      fr: "Partenaire Normes Techniques",
+    },
+    metric: { en: "100% Compliance", fr: "100% Conformité" },
+    categories: ["creative"],
+    description: {
+      en: "Delivered high-stakes industrial documentation and visual assets for Siemens, Marsa Maroc, and ONDE. Specialized in strict adherence to Global Brand Guidelines and industrial safety standards.",
+      fr: "Livraison de documentation industrielle et d'actifs visuels pour Siemens, Marsa Maroc et ONDE. Spécialisation dans le respect strict des directives de marque et des normes de sécurité industrielle.",
+    },
+    tags: ["Compliance", "Industrial Safety", "Global Brand Guidelines"],
+  },
+  {
     id: "softstore-architecture",
     title: { en: "SoftStore Data Ecosystem", fr: "Écosystème Data SoftStore" },
-    role: { en: "Systems Architect", fr: "Architecte Systèmes" },
-    metric: { en: "Sheet-to-Site Logic", fr: "Logique Sheet-to-Site" },
-    categories: ["operations", "data"],
+    role: { en: "System Architect", fr: "Architecte Système" },
+    metric: { en: "Zero-Latency Update", fr: "Mise à jour sans latence" },
+    categories: ["operations"],
     description: {
-      en: "Architected a production-ready Sheet-to-Site ecosystem where Google Sheets acts as a live PostgreSQL-alternative for real-time inventory management. Built for high operational speed and low-friction scalability for the lighting industry.",
-      fr: "Architecture d'un écosystème Sheet-to-Site où Google Sheets sert d'alternative PostgreSQL pour la gestion d'inventaire en temps réel. Conçu pour une haute vitesse opérationnelle dans le secteur de l'éclairage.",
+      en: "Architected a Sheet-to-Site ecosystem where Google Sheets acts as a live PostgreSQL-alternative for real-time inventory management. Built for high operational speed and low-friction scalability.",
+      fr: "Architecture d'un écosystème Sheet-to-Site où Google Sheets sert d'alternative PostgreSQL pour la gestion d'inventaire en temps réel. Conçu pour une haute vitesse opérationnelle.",
     },
     tags: ["System Architecture", "Real-time Sync", "Data Orchestration"],
     link: "https://softstore-professional-lighting.vercel.app/",
   },
   {
-    id: "siemens-industrial",
-    title: {
-      en: "Industrial Standard Systems",
-      fr: "Systèmes aux Normes Industrielles",
-    },
-    role: {
-      en: "Technical Media & Industrial Standards Consultant",
-      fr: "Consultant Médias Techniques & Normes Industrielles",
-    },
-    metric: { en: "100% Brand Compliance", fr: "100% Conformité Marque" },
-    categories: ["creative"],
-    description: {
-      en: "Consulted on industrial documentation and technical media for Siemens, Marsa Maroc, and ONDE. Focused on strict compliance with Global Brand Guidelines and large-scale corporate infrastructure standards.",
-      fr: "Conseil en documentation industrielle et médias techniques pour Siemens, Marsa Maroc et ONDE. Focus sur la conformité stricte aux directives de marque mondiales et aux standards d'infrastructure corporate.",
-    },
-    tags: ["Siemens", "Marsa Maroc", "Compliance", "Global Brand Guidelines"],
-  },
-  {
     id: "verdanov-crm",
     title: {
-      en: "Global CRM Architecture",
-      fr: "Architecture CRM Globale",
+      en: "Verdanov CRM Infrastructure",
+      fr: "Infrastructure CRM Verdanov",
     },
-    role: {
-      en: "Senior Full-Stack Architect",
-      fr: "Architecte Full-Stack Senior",
-    },
+    role: { en: "Head of Operations", fr: "Responsable Opérations" },
     metric: {
-      en: "ROI-Focused Data Flows",
-      fr: "Flux de Données Axés ROI",
+      en: "End-to-End Data Flow",
+      fr: "Flux de Données de Bout en Bout",
     },
     categories: ["operations", "growth"],
     description: {
-      en: "Designed the Bitrix24 CRM infrastructure and managed end-to-end import data flows from China. Built custom automation layers to synchronize supply chain logistics with sales pipelines.",
-      fr: "Conception de l'infrastructure CRM Bitrix24 et gestion des flux de données importés de Chine. Construction de couches d'automatisation pour synchroniser la logistique avec les pipelines de vente.",
+      en: "Architected the Bitrix24 CRM server and managed complex import/export data flows from China. Optimized lead conversions through custom automation scripts and data-driven pipeline management.",
+      fr: "Architecture du serveur CRM Bitrix24 et gestion des flux de données import/export complexes depuis la Chine. Optimisation des conversions via des scripts d'automatisation personnalisés.",
     },
-    tags: ["Bitrix24", "China Import", "Automation", "CRM Architecture"],
+    tags: ["Bitrix24", "Import/Export", "Automation", "CRM Architecture"],
   },
 ];
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
     id: "verdanov-ops",
-    role: {
-      en: "Senior Full-Stack Architect",
-      fr: "Architecte Full-Stack Senior",
-    },
+    role: { en: "Head of Operations", fr: "Responsable des Opérations" },
     company: "Verdanov / Bicshop",
     period: "2021 – Present",
     location: "Casablanca",
     categories: ["operations", "growth"],
     description: {
-      en: "Designing end-to-end CRM architectures and data flows between China and Morocco. Implementing 'Systems-as-a-Server' logic to automate supply chain and sales synchronization.",
-      fr: "Conception d'architectures CRM et de flux de données Chine-Maroc. Mise en œuvre de la logique 'Systems-as-a-Server' pour automatiser la synchronisation logistique et vente.",
+      en: "Architecting end-to-end operational systems and data flows. Responsible for technical resilience and ROI-focused automation for e-commerce and import/export ventures.",
+      fr: "Architecture des systèmes opérationnels et des flux de données. Responsable de la résilience technique et de l'automatisation axée sur le ROI pour l'e-commerce et l'import/export.",
     },
     achievements: [
       {
-        en: "Architected Bitrix24 CRM infrastructure for complex cross-continent import data flows.",
-        fr: "Architecture de l'infrastructure CRM Bitrix24 pour les flux de données d'importation transcontinentaux.",
+        en: "Architected Bitrix24 CRM server to manage complex cross-continent data flows (China-Morocco).",
+        fr: "Architecture du serveur CRM Bitrix24 pour gérer les flux de données transcontinentaux complexes (Chine-Maroc).",
       },
       {
-        en: "Built custom Python automation reducing data friction in order processing by 40%.",
-        fr: "Construction d'automatisations Python réduisant les frictions de données de 40%.",
+        en: "Deployed custom automation that reduced order processing latency by 40%.",
+        fr: "Déploiement d'automatisations personnalisées réduisant la latence de traitement des commandes de 40%.",
       },
       {
-        en: "Established industrial synchronization between supplier APIs and sales channels.",
-        fr: "Établissement d'une synchronisation industrielle entre les APIs fournisseurs et les canaux de vente.",
+        en: "Integrated real-time inventory tracking linking supplier APIs to front-end sales channels.",
+        fr: "Intégration du suivi d'inventaire en temps réel reliant les APIs fournisseurs aux canaux de vente front-end.",
       },
     ],
     techStack: [
-      "Bitrix24 Architecture",
+      "CRM Architecture",
       "Python",
       "API Orchestration",
-      "Data Sync",
+      "Supply Chain",
     ],
   },
   {
     id: "industrial-media-partner",
     role: {
-      en: "Technical Media & Industrial Standards Consultant",
-      fr: "Consultant Médias Techniques & Normes Industrielles",
+      en: "Technical Media & Standards Partner",
+      fr: "Partenaire Média & Normes Techniques",
     },
     company: "Freelance (Siemens, Marsa Maroc, ONDE)",
     period: "2020 – Present",
     location: "Casablanca",
     categories: ["creative"],
     description: {
-      en: "Bridging the gap between complex industrial infrastructure and Global Brand Guidelines. Focused on high-stakes documentation and technical compliance.",
-      fr: "Lien entre infrastructure industrielle complexe et directives de marque mondiales. Focus sur la documentation de haut niveau et la conformité technique.",
+      en: "Specializing in high-stakes industrial documentation and visual communication that bridges technical complexity with corporate compliance.",
+      fr: "Spécialisation dans la documentation industrielle de haut niveau et la communication visuelle reliant complexité technique et conformité entreprise.",
     },
     achievements: [
       {
-        en: "Ensured 100% compliance with Siemens Global Brand Standards for technical assets.",
-        fr: "Conformité 100% avec les standards de marque mondiaux Siemens pour les actifs techniques.",
+        en: "Maintained 100% compliance with strict Global Brand Guidelines for Fortune 500 industrial clients.",
+        fr: "Maintien d'une conformité de 100% avec les directives de marque mondiales strictes pour des clients industriels du Fortune 500.",
       },
       {
-        en: "Developed industrial media workflows for large-scale corporate infrastructure projects.",
-        fr: "Développement de workflows médias industriels pour des projets d'infrastructure corporate à grande échelle.",
+        en: "Produced technical documentation visuals for large-scale port operations at Marsa Maroc.",
+        fr: "Production de visuels de documentation technique pour les opérations portuaires d'envergure chez Marsa Maroc.",
       },
     ],
-    techStack: ["Industrial Media", "Brand Equity", "Corporate Compliance"],
+    techStack: ["Industrial Standards", "Visual Production", "Compliance"],
   },
 ];
 
 export const SKILLS_DATA: Skill[] = [
-  { name: "Systems Architecture", level: 98, category: "operations" },
-  { name: "AI Ops (Vertex AI/Gemini)", level: 95, category: "data" },
-  { name: "Database Design (Postgres)", level: 100, category: "operations" },
-  { name: "Python Systems", level: 92, category: "operations" },
-  { name: "React / Next.js", level: 90, category: "growth" },
-  { name: "CRM Ops (Bitrix24)", level: 95, category: "operations" },
-  { name: "Industrial Standards", level: 100, category: "creative" },
-  { name: "Theoretical Logic (Physics)", level: 95, category: "data" },
-  { name: "ROI Orchestration", level: 94, category: "growth" },
+  { name: "AI Orchestration (Vertex AI)", level: 95, category: "data" },
+  {
+    name: "Database Architecture (PostgreSQL)",
+    level: 90,
+    category: "operations",
+  },
+  { name: "Python (Automation)", level: 92, category: "operations" },
+  { name: "Systems Architecture", level: 95, category: "operations" },
+  { name: "React / Next.js", level: 88, category: "growth" },
+  { name: "ROI Optimization", level: 94, category: "growth" },
+  { name: "Data Analytics (SPSS/Excel)", level: 90, category: "data" },
+  { name: "CRM Architecture (Bitrix24)", level: 92, category: "operations" },
+  { name: "Industrial Standards", level: 90, category: "creative" },
+  { name: "Meta Certified Media Buying", level: 85, category: "growth" },
 ];
 
 export const CATEGORY_ICONS = {
@@ -211,14 +204,14 @@ export const EDUCATION_DATA: EducationItem[] = [
   {
     id: "bachelors-marketing",
     degree: {
-      en: "Bachelor in Marketing & Data Analytics",
-      fr: "Licence en Marketing & Analyse de Données",
+      en: "Bachelor in Marketing & Digital Strategies",
+      fr: "Licence en Marketing & Stratégies Digitales",
     },
     school: "Sup'RH Casablanca",
-    year: "2023 - Present (3rd Year)",
+    year: "2023 - Present",
     description: {
-      en: "Focusing on Data Strategy and AI Operations. Applying structural logic to business bottlenecks.",
-      fr: "Focus sur la Stratégie Data et les Opérations IA. Application de la logique structurelle aux blocages business.",
+      en: "Specializing in Data Marketing and Digital Transformation. Applying structural logic to business problems.",
+      fr: "Spécialisation en Marketing Data et Transformation Digitale. Application de la logique structurelle aux problèmes business.",
     },
   },
   {
@@ -230,8 +223,8 @@ export const EDUCATION_DATA: EducationItem[] = [
     school: "University of Science",
     year: "2021",
     description: {
-      en: "Foundation for multi-variate analysis and technical resilience in systems design.",
-      fr: "Base de l'analyse multivariée et de la résilience technique dans la conception de systèmes.",
+      en: "Provided the mental framework for multi-variate analysis and technical problem solving.",
+      fr: "Formation au cadre mental de l'analyse multivariée et de la résolution de problèmes techniques.",
     },
   },
 ];
